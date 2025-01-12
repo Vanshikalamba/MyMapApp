@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const WaypointRow = ({ index, wp, distance }) => {
+const Waypoint = ({ index, wp, distance }) => {
   const [showActions, setShowActions] = useState(false);
 
   return (
@@ -34,4 +34,4 @@ const WaypointRow = ({ index, wp, distance }) => {
   );
 };
 
-export default WaypointRow;
+export default Waypoint;

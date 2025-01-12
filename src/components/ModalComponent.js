@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
-import WaypointRow from "./WayPoint";
+import Waypoint from "./WayPoint";
 
 Modal.setAppElement("#root");
 
@@ -51,7 +51,7 @@ const ModalComponent = ({ isOpen, onClose, waypoints, drawType }) => {
         </thead>
         <tbody>
           {waypoints.map((wp, index) => (
-            <WaypointRow
+            <Waypoint
               key={index}
               index={index}
               wp={wp}
